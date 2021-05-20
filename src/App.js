@@ -12,9 +12,11 @@ import {
 } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
 import { CustomHits } from './CustomHits';
+import { CustomRefinementList } from './CustomRefinementList';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBox } from '@fortawesome/free-solid-svg-icons';
+
 
 const searchClient = algoliasearch('latency', '6be0576ff61c053d5f9a3225e2a90f76');
 
@@ -30,6 +32,18 @@ function App() {
                 <FontAwesomeIcon icon={faBox}/>
               </div>
               <div className="search-panel__filters">
+                <CustomRefinementList 
+                    attribute="brand"                   
+                    translations={{
+                      showMore(expanded) {
+                        return expanded ? 'show less' : 'Shore more'
+                      },
+                      noResults: 'No Results',
+                      submitTitle: 'Submit your search query',
+                      resetTitle: 'Clear your search quesry',
+                      placeholder: 'Search Here...'
+                    }}                  
+                />
                 <RefinementList 
                     attribute="brand"                   
                     translations={{

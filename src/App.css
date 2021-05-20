@@ -48,7 +48,7 @@ em {
   
   .search-panel__results {
     flex: 3;
-    padding-left:15px;
+    padding-left:18px;
   }
   
   .searchbox {
@@ -74,11 +74,17 @@ em {
     font-size:80px;
   }
 
+  .ais-Hits-list {
+    margin-left: 0 !important;
+  }
   .ais-Hits-item{    
     width:327px !important;
     height:515px;
     border: none;
     box-shadow: 0px 0px 12px #0000000F;
+    margin-left: 0 !important;
+    margin-right:30px;
+    border-radius: 3px;
   }
   .selected-product-img {
     width:287px;
@@ -128,4 +134,20 @@ em {
   .refinement-dropdown-wrapper {
     display: flex;
     margin-bottom: 15px;
+  }
+
+  /* left side filter customization */
+
+  .dpc-product-left-filter {
+    list-style: none;
+    padding:0;
+  }
+  .ais-RefinementList-item {
+    width:327px;
+    height:64px;
+    border-bottom:1px solid #EBEAEE;
+  }
+  .dpc-product-filter-item {
+    text-decoration: none;
+    color: #363D3F;
   }
