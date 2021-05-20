@@ -17,7 +17,7 @@ const Hits = ({ hits }) => (
                                 #{hit.modelNumber}
                             </div>
                             <div className="product-info-brand">
-                                by {hit.brand}    
+                                by {hit.manufacturerName}    
                             </div>                            
                         </div>
                         <div className="selected-product-detail">

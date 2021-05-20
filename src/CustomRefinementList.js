@@ -1,3 +1,5 @@
+import { faTv } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Highlight, connectRefinementList } from 'react-instantsearch-dom';
 
@@ -18,6 +20,7 @@ const RefinementList = ({
             </li> */}
             {items.map(item => (
             <li className="ais-RefinementList-item" key={item.label}>
+                <FontAwesomeIcon icon={faTv}/>
                 <a
                 className="dpc-product-filter-item"
                 href={createURL(item.value)}

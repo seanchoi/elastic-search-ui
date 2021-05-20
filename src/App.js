@@ -68,9 +68,9 @@ function App() {
               />
               <div className="refinement-dropdown-wrapper">
                 <MenuSelect 
-                  attribute="manufacturerName" 
+                  attribute="category" 
                   translations={{
-                    seeAllOption: 'Manufacturer',
+                    seeAllOption: 'Category',
                   }}
                 />
                 <MenuSelect 
