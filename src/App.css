@@ -1,0 +1,131 @@
+em {
+    background: cyan;
+    font-style: normal;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(to right, #8e43e7, #00aeff);
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .header a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .header-title {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  
+  .header-title::after {
+    content: ' ▸ ';
+    padding: 0 0.5rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .search-panel {
+    display: flex;
+  }
+  
+  .search-panel__filters {
+    flex: 1;
+  }
+  
+  .search-panel__results {
+    flex: 3;
+    padding-left:15px;
+  }
+  
+  .searchbox {
+    margin-bottom: 2rem;
+  }
+  
+  .pagination {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+
+
+  /* custom */
+  .category-title-box {
+    width:327px;
+    height:256px;
+    background: transparent linear-gradient(232deg, #2AB1C0 0%, #39B896 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:80px;
+  }
+
+  .ais-Hits-item{    
+    width:327px !important;
+    height:515px;
+    border: none;
+    box-shadow: 0px 0px 12px #0000000F;
+  }
+  .selected-product-img {
+    width:287px;
+    height:287px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .selected-product-title {
+    width:100%;
+    height:50px;
+    font-size: 14px;
+    margin: 32px 0 5px 0;
+    text-align: center;
+    color:#252525;
+  }
+  .selected-product-detail {
+    display: flex;    
+    justify-content:space-between;
+    margin-bottom:10px;
+  }
+  .product-info-productId, .product-info-brand {
+    font-size:12px;
+    color:#252525;
+  }
+  .product-info-price {
+    color:#252525;
+    font-size:18px;
+    font-weight: 700;
+  }
+  .selected-product-color-wrapper {
+    display: flex;    
+  }
+  .product-info-color {
+    width:24px;
+    height:24px;
+    background-color: #EBEAEE;
+    margin-left:5px;
+  }
+
+  button {    
+    width:100%;
+    height:40px;
+    border:none;
+    background-color: #F9F9FA;
+  }
+  .refinement-dropdown-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+  }
