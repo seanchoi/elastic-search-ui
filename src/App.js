@@ -1,5 +1,5 @@
 import React from 'react';
-import algoliasearch from 'algoliasearch/lite';
+import algoliasearch from 'algoliasearch';
 import {
   InstantSearch,
   Hits,
@@ -18,14 +18,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBox } from '@fortawesome/free-solid-svg-icons';
 
 
-const searchClient = algoliasearch('latency', '6be0576ff61c053d5f9a3225e2a90f76');
+const searchClient = algoliasearch('5WNQ9R4YYQ', 'e7f76745be4915c4ef3ac6e7a9e9ad00');
 
 function App() {
   return (
     <div>    
 
       <div className="container-fluid">
-        <InstantSearch searchClient={searchClient} indexName="instant_search">
+        <InstantSearch searchClient={searchClient} indexName="dpc">
           <div className="search-panel">
             <div className="search-panel-left">
               <div className="category-title-box">
@@ -33,7 +33,7 @@ function App() {
               </div>
               <div className="search-panel__filters">
                 <CustomRefinementList 
-                    attribute="brand"                   
+                    attribute="category"                   
                     translations={{
                       showMore(expanded) {
                         return expanded ? 'show less' : 'Shore more'
@@ -44,7 +44,7 @@ function App() {
                       placeholder: 'Search Here...'
                     }}                  
                 />
-                <RefinementList 
+                {/* <RefinementList 
                     attribute="brand"                   
                     translations={{
                       showMore(expanded) {
@@ -55,7 +55,7 @@ function App() {
                       resetTitle: 'Clear your search quesry',
                       placeholder: 'Search Here...'
                     }}                  
-                />              
+                />               */}
               </div> 
             </div>
                          
@@ -68,25 +68,25 @@ function App() {
               />
               <div className="refinement-dropdown-wrapper">
                 <MenuSelect 
-                  attribute="rating" 
+                  attribute="manufacturerName" 
                   translations={{
-                    seeAllOption: 'Rating',
+                    seeAllOption: 'Manufacturer',
                   }}
                 />
                 <MenuSelect 
-                  attribute="price_range"                 
+                  attribute="productName"                 
                   translations={{
-                    seeAllOption: 'Price Range',
+                    seeAllOption: 'Product Name',
                   }}
                 />
-                <SortBy
+                {/* <SortBy
                   defaultRefinement="instant_search"
                   items={[
                     { value: 'instant_search', label: 'Sorty by Price' },
                     { value: 'instant_search_price_asc', label: 'Price Low-High' },
                     { value: 'instant_search_price_desc', label: 'Price High-Low.' },
                   ]}
-                />
+                /> */}
               </div>
               {/* <Hits hitComponent={Hit} /> */}
               <CustomHits hitComponent={Hit} />

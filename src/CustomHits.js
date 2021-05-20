@@ -9,12 +9,12 @@ const Hits = ({ hits }) => (
                         <img src={hit.image} alt=""/>
                     </div>
                     <div className="selected-product-title">
-                        {hit.name}    
+                        {hit.productName}    
                     </div>
                     <div className="selected-product-info-wrapper">
                         <div className="selected-product-detail">
                             <div className="product-info-productId">
-                                #{hit.objectID}
+                                #{hit.modelNumber}
                             </div>
                             <div className="product-info-brand">
                                 by {hit.brand}    
