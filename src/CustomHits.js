@@ -6,7 +6,7 @@ const Hits = ({ hits }) => (
             {hits.map(hit => (
                 <li className="ais-Hits-item" key={hit.objectID}>
                     <div className="selected-product-img"> 
-                        <img src={hit.image} alt=""/>
+                        <img src={hit.primaryImage} alt=""/>
                     </div>
                     <div className="selected-product-title">
                         {hit.productName}    
@@ -30,7 +30,7 @@ const Hits = ({ hits }) => (
                             </div>
                         </div>                        
                     </div>
-                    <button>VIEW DETAILS</button>                    
+                    <button className="ais-Hits-btn-view">VIEW DETAILS</button>                    
                 </li>
             ))}  
         </ul>

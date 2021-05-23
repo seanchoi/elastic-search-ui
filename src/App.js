@@ -60,13 +60,14 @@ function App() {
             </div>
                          
             <div className="search-panel__results">
-              <SearchBox
+              {/* <SearchBox
                 className="searchbox"
                 translations={{
                   placeholder: '',
                 }}
-              />
+              /> */}
               <div className="refinement-dropdown-wrapper">
+                <div className="section-justify-left">
                 <MenuSelect 
                   attribute="category" 
                   translations={{
@@ -78,15 +79,22 @@ function App() {
                   translations={{
                     seeAllOption: 'Product Name',
                   }}
+                
                 />
-                {/* <SortBy
-                  defaultRefinement="instant_search"
-                  items={[
-                    { value: 'instant_search', label: 'Sorty by Price' },
-                    { value: 'instant_search_price_asc', label: 'Price Low-High' },
-                    { value: 'instant_search_price_desc', label: 'Price High-Low.' },
-                  ]}
-                /> */}
+                </div>
+                <div className="section-justify-right">
+                  <button className="btn-compare">compare</button>
+{/*                 
+                  <SortBy
+                      defaultRefinement="instant_search"
+                      items={[
+                        { value: 'instant_search', label: 'Sorty by Price' },
+                        { value: 'instant_search_price_asc', label: 'Price Low-High' },
+                        { value: 'instant_search_price_desc', label: 'Price High-Low.' },
+                    ]}
+                  /> */}
+                </div>
+              
               </div>
               {/* <Hits hitComponent={Hit} /> */}
               <CustomHits hitComponent={Hit} />

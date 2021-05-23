@@ -11,15 +11,16 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "algoliasearch": "^4.9.1",
+    "classnames": "2.2.6",
     "instantsearch.css": "^7.4.5",
+    "qs": "6.8.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
+    "react-compound-slider": "2.2.0",
     "react-dom": "^17.0.2",
     "react-instantsearch-dom": "^6.11.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1",
-    "classnames": "2.2.6",
-    "qs": "6.8.0",
-    "react-compound-slider": "2.2.0"
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
